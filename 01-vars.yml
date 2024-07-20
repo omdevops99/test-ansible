@@ -1,26 +1,26 @@
-- name: variable
-  hosts: localhost
-  vars:
-    URL: sample.com
-  tasks:
-    - name: Print URL variable
-      ansible.builtin.debug:
-       msg: "{{ URL }}"
+# - name: variable
+#   hosts: localhost
+#   vars:
+#     URL: sample.com
+#   tasks:
+#     - name: Print URL variable
+#       ansible.builtin.debug:
+#        msg: "{{ URL }}"
 
 
-- name: variable
-  hosts: localhost
-  tasks:
-   - name: variables
-     ansible.builtin.debug:
-       msg: "{{ URL1 }}"
-     vars:
-       URL1: sample.com
-   - name: variable2
-     ansible.builtin.debug:
-       msg: "{{ URL2 }}"
-     vars:
-       URL2: sample.com
+# - name: variable
+#   hosts: localhost
+#   tasks:
+#    - name: variables
+#      ansible.builtin.debug:
+#        msg: "{{ URL1 }}"
+#      vars:
+#        URL1: sample.com
+#    - name: variable2
+#      ansible.builtin.debug:
+#        msg: "{{ URL2 }}"
+#      vars:
+#        URL2: sample.com
 
 
  - name: register demo
